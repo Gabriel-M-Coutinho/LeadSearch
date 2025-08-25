@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gabri\\RiderProjects\\LeadsSeach\\LeadsSeach\\LeadsSeach.csproj": {}
+    "C:\\Users\\Notebook\\source\\repos\\LeadSearch\\LeadsSeach\\LeadsSeach.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gabri\\RiderProjects\\LeadsSeach\\LeadsSeach\\LeadsSeach.csproj": {
+    "C:\\Users\\Notebook\\source\\repos\\LeadSearch\\LeadsSeach\\LeadsSeach.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabri\\RiderProjects\\LeadsSeach\\LeadsSeach\\LeadsSeach.csproj",
+        "projectUniqueName": "C:\\Users\\Notebook\\source\\repos\\LeadSearch\\LeadsSeach\\LeadsSeach.csproj",
         "projectName": "LeadsSeach",
-        "projectPath": "C:\\Users\\gabri\\RiderProjects\\LeadsSeach\\LeadsSeach\\LeadsSeach.csproj",
-        "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabri\\RiderProjects\\LeadsSeach\\LeadsSeach\\obj\\",
+        "projectPath": "C:\\Users\\Notebook\\source\\repos\\LeadSearch\\LeadsSeach\\LeadsSeach.csproj",
+        "packagesPath": "C:\\Users\\Notebook\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Notebook\\source\\repos\\LeadSearch\\LeadsSeach\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Notebook\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -43,7 +43,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -67,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\gabri\\.dotnet\\sdk\\8.0.413/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

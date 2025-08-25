@@ -1,0 +1,131 @@
+###################
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.pdb
+*.cache
+*.dll.config
+
+# Include dlls if they’re in the NuGet packages directory
+!/packages/*/lib/*.dll
+!/packages/*/lib/*/*.dll
+
+# Include dlls if they're in the CommonReferences directory
+!*CommonReferences/*.dll
+
+####################
+# VS Upgrade stuff #
+####################
+UpgradeLog*.XML
+_UpgradeReport_Files/
+
+###############
+# Directories #
+###############
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+
+###################
+# Web publish log #
+###################
+*.Publish.xml
+*.pubxml
+*.publishproj
+
+#############
+# Resharper #
+#############
+/_ReSharper*/
+*.ReSharper
+*.DotSettings.user
+.idea/
+
+############
+# Packages #
+############
+*.nupkg
+*.snupkg
+*.nuspec
+packages/
+.nuget/
+NuGet.exe
+
+######################
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+*.db
+*.mdf
+*.ldf
+
+####################
+# Coverage & Tests #
+####################
+*.coverage
+*.coveragexml
+TestResult*/
+TestResults/
+*.ncrunchsolution
+*.dotCover
+
+#########################
+# Visual Studio files   #
+#########################
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.vs/
+*.VC.db
+*.VC.VC.opendb
+
+#########################
+# .NET Core / SDK files #
+#########################
+project.lock.json
+project.fragment.lock.json
+artifacts/
+*.deps.json
+*.runtimeconfig.json
+*.runtimeconfig.dev.json
+*.global.json
+
+#####################
+# OS generated files#
+#####################
+.DS_Store
+ehthumbs.db
+Icon?
+Thumbs.db
+desktop.ini
+
+##################
+# Archives etc.  #
+##################
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+######################
+# Scripts & Temp     #
+######################
+_[Ss]cripts
+*.[Cc]ache
