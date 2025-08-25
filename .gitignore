@@ -1,34 +1,10 @@
 ###################
-# Compiled source #
+# Build artifacts #
 ###################
-*.com
-*.class
-*.dll
-*.exe
-*.pdb
-*.cache
-*.dll.config
-
-# Include dlls if they’re in the NuGet packages directory
-!/packages/*/lib/*.dll
-!/packages/*/lib/*/*.dll
-
-# Include dlls if they're in the CommonReferences directory
-!*CommonReferences/*.dll
-
-####################
-# VS Upgrade stuff #
-####################
-UpgradeLog*.XML
-_UpgradeReport_Files/
-
-###############
-# Directories #
-###############
 [Bb]in/
 [Oo]bj/
-[Ll]og/
-[Ll]ogs/
+**/[Bb]in/
+**/[Oo]bj/
 [Dd]ebug/
 [Rr]elease/
 x64/
@@ -36,33 +12,50 @@ x86/
 [Aa][Rr][Mm]/
 [Aa][Rr][Mm]64/
 
+#########################
+# Visual Studio / VSCode#
+#########################
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.vscode/
+*.VC.db
+*.VC.VC.opendb
+
 ###################
-# Web publish log #
+# ASP.NET / Publish
 ###################
+App_Data/
 *.Publish.xml
 *.pubxml
 *.publishproj
 
-#############
-# Resharper #
-#############
-/_ReSharper*/
-*.ReSharper
-*.DotSettings.user
-.idea/
-
-############
-# Packages #
-############
-*.nupkg
-*.snupkg
-*.nuspec
+###########
+# NuGet    #
+###########
 packages/
 .nuget/
 NuGet.exe
+*.nupkg
+*.snupkg
+*.nuspec
+*.dll.config
+
+#########################
+# .NET SDK / Core files #
+#########################
+artifacts/
+project.lock.json
+project.fragment.lock.json
+*.deps.json
+*.runtimeconfig.json
+*.runtimeconfig.dev.json
+*.global.json
 
 ######################
-# Logs and databases #
+# Logs / Databases   #
 ######################
 *.log
 *.sql
@@ -71,50 +64,37 @@ NuGet.exe
 *.mdf
 *.ldf
 
-####################
-# Coverage & Tests #
-####################
-*.coverage
-*.coveragexml
+########################
+# Tests / Coverage     #
+########################
 TestResult*/
 TestResults/
+*.coverage
+*.coveragexml
 *.ncrunchsolution
 *.dotCover
 
-#########################
-# Visual Studio files   #
-#########################
-*.suo
-*.user
-*.userosscache
-*.sln.docstates
-.vs/
-*.VC.db
-*.VC.VC.opendb
-
-#########################
-# .NET Core / SDK files #
-#########################
-project.lock.json
-project.fragment.lock.json
-artifacts/
-*.deps.json
-*.runtimeconfig.json
-*.runtimeconfig.dev.json
-*.global.json
+########################
+# Tools / IDEs extras  #
+########################
+/_ReSharper*/
+*.ReSharper
+*.DotSettings.user
+.idea/
+*.[Cc]ache
+_[Ss]cripts
 
 #####################
-# OS generated files#
+# OS junk files     #
 #####################
 .DS_Store
-ehthumbs.db
-Icon?
 Thumbs.db
+ehthumbs.db
 desktop.ini
 
-##################
-# Archives etc.  #
-##################
+########################
+# Archives / binaries  #
+########################
 *.7z
 *.dmg
 *.gz
@@ -123,9 +103,9 @@ desktop.ini
 *.rar
 *.tar
 *.zip
-
-######################
-# Scripts & Temp     #
-######################
-_[Ss]cripts
-*.[Cc]ache
+*.com
+*.class
+*.dll
+*.exe
+*.pdb
+*.cache
