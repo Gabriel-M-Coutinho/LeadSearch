@@ -12,16 +12,16 @@ namespace LeadSearch
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // SERVIÇOS AQUI
+            // SERVIï¿½OS AQUI
             builder.Services.AddControllersWithViews();
 
-            // Serviços de Conexão
+            // Serviï¿½os de Conexï¿½o
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
             builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connectionString));
            
             builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-            // Serviços do Identity
+            // Serviï¿½os do Identity
             builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 

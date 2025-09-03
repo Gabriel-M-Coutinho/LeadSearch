@@ -5,7 +5,7 @@ namespace LeadSearch.Models
 {
     public class User : IdentityUser
     {
-        [Required(ErrorMessage = "O nome é obrigatório"), Display(Name = "Nome")]
+        [Required(ErrorMessage = "Por favor, insira um CPF/CNPJ"), Display(Name = "Nome")]
         public string? CpfCnpj { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }

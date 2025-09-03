@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LeadSearch.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250827035722_criar")]
-    partial class criar
+    [Migration("20250903033552_banco")]
+    partial class banco
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

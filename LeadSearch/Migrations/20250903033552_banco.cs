@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace LeadSearch.Migrations
 {
     /// <inheritdoc />
-    public partial class criar : Migration
+    public partial class banco : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

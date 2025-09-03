@@ -73,17 +73,25 @@ namespace LeadSearch.Controllers
 
             if (ModelState.IsValid)
             {
+                var userToUpdate = await _context.Users.FindAsync(id);
+                if (userToUpdate == null) return NotFound();
+
+                userToUpdate.UserName = user.UserName;
+                userToUpdate.Email = user.Email;
+                userToUpdate.CpfCnpj = user.CpfCnpj;
+
                 try
                 {
-                    _context.Update(user);
                     await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!_context.Users.Any(e => e.Id == user.Id)) return NotFound();
-                    else throw;
+                    if (!_context.Users.Any(e => e.Id == user.Id))
+                        return NotFound();
+                    else
+                        throw;
                 }
-                return RedirectToAction(nameof(Index));
             }
             return View(user);
         }
